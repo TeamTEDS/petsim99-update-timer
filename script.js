@@ -35,6 +35,7 @@ function updateCountdown() {
 	document.getElementById(
 		"middle-text"
 	).innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+	document.title = `PS99 Update | ${days}:${hours}:${minutes}:${seconds}`;
 
 	const localTimeOptions = {
 		year: "2-digit",
