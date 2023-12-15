@@ -32,6 +32,10 @@ function updateCountdown() {
 	);
 	const seconds = formatNumber(Math.floor((timeDiff % (1000 * 60)) / 1000));
 
+	document.getElementById(
+		"middle-text"
+	).innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+
 	const localTimeOptions = {
 		year: "2-digit",
 		month: "2-digit",
